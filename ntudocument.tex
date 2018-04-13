@@ -1,0 +1,107 @@
+
+\documentclass[UTF8,a4paper,hyperref]{ctexrep}
+\usepackage[a4paper,left=0.4in,right=0.4in,top=0.7in,bottom=0.4in]{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tocloft}
+\usepackage{pdflscape}
+\usepackage{multicol}
+\usepackage{accsupp}
+% \usepackage[UTF8]{ctex}
+% \usepackage{varwidth}
+% \usepackage{fontspec}
+% \usepackage{xeCJK}
+% \setmainfont{Times New Roman} 
+% \setCJKmainfont[BoldFont=Heiti SC Medium]{Heiti SC Light}
+% \setCJKsansfont{Heiti SC}
+% \setCJKmonofont{Courier}
+
+\usepackage{listings}
+
+\renewcommand*{\ttdefault}{pcr}
+\renewcommand\cftsecfont{\fontsize{8}{9}\bfseries}
+\renewcommand\cftsecpagefont{\fontsize{8}{9}\mdseries}
+\renewcommand\cftsubsecfont{\fontsize{5}{6}\mdseries}
+\renewcommand\cftsubsecpagefont{\fontsize{5}{6}\mdseries}
+\renewcommand\cftsecafterpnum{\vspace{-1ex}}
+\renewcommand\cftsubsecafterpnum{\vspace{-1ex}}
+\newcommand\emptyaccsupp[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
+\newfontfamily\consolas{Consolas}
+
+\lstdefinestyle{shared}{
+    belowcaptionskip=1\baselineskip,
+    numbers=left,
+    numberstyle=\emptyaccsupp, 
+    frame=leftline,
+    framerule=28pt,
+    basicstyle=\small\consolas\color[RGB]{1,1,1},
+    tabsize=4,
+    frame=leftline,
+    rulecolor=\color[RGB]{173,173,173},
+    backgroundcolor=\color[RGB]{244,244,244},
+    xleftmargin=3em,
+    %identifierstyle=\color{purple},
+    columns=fixed,
+    breaklines=true,
+    escapeinside=``% 英文分号中可写入中文
+}
+\lstdefinestyle{cpp}{
+    style=shared,
+    language=C++,
+    keywordstyle=\bfseries\color[RGB]{0,97,168},
+    commentstyle=\itshape\color{red!80!black},
+    identifierstyle=\color{black},
+    stringstyle=\color{orange},
+}
+\lstdefinestyle{java}{
+    style=shared,
+    language=Java,
+    keywordstyle=\bfseries\color{green!40!black},
+    commentstyle=\itshape\color{purple!40!black},
+    identifierstyle=\color{blue},
+    stringstyle=\color{orange},
+}
+\lstdefinestyle{py}{
+    style=shared,
+    language=Python,
+    keywordstyle=\bfseries\color{green!40!black},
+    commentstyle=\itshape\color{purple!40!black},
+    identifierstyle=\color{blue},
+    stringstyle=\color{orange},
+}
+\lstdefinestyle{txt}{
+    style=shared,
+}
+\lstset{escapeinside=``}
+
+\pagestyle{fancy}
+\fancyhead[L]{Nantong University}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+
+\fancypagestyle{plain}
+{
+\fancyhead[L]{Nantong University}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+}
+
+\title{\vspace{-4ex}\Large{Nantong University ICPC Team Notebook (2018-19)}}
+\author{thirtiseven}
+\date{}
+
+\begin{document}
+% \begin{landscape}
+% \begin{multicols}{2}
+
+\maketitle
+\vspace{-13ex}
+\tableofcontents
+\pagestyle{fancy}
+
+\input contents.tex
+
+% \end{multicols}
+% \end{landscape}
+\end{document}
