@@ -7,3 +7,7 @@
 #[章节标题]
 #文件名.后缀	算法名称
 
+
+[输入输出]
+sync_with_stdio.cc 	取消同步
+out_float.cc 	浮点数输出格式

@@ -6,7 +6,7 @@
 
 在 contents.txt 中，在合适的位置加入文件名和文件标题
 
-支持的格式：.cc (C++) .java .py .txt .tex
+支持的格式：.c .cc .cpp (C++) .java .py .txt .tex
 
 使用 generate_pdf.py 编译生成 pdf 文件
 
