@@ -1,6 +1,6 @@
 /*
-Ïß¶ÎÊ÷Ä£°å£º
-AÎªÔ­Ê¼Êı×é£¬sum¼ÇÂ¼Çø¼äºÍ£¬AddÎªÀÁ¶è±ê¼Ç
+çº¿æ®µæ ‘æ¨¡æ¿ï¼š
+Aä¸ºåŸå§‹æ•°ç»„ï¼Œsumè®°å½•åŒºé—´å’Œï¼ŒAddä¸ºæ‡’æƒ°æ ‡è®°
 */
 
 int A[maxn], sum[maxn << 2], Add[maxn << 2];
@@ -31,7 +31,7 @@ void build(int l, int r, int rt) {
 	pushup(rt);
 }
 
-//Çø¼ä¼ÓÖµ
+//åŒºé—´åŠ å€¼
 void update(int L, int R, int val, int l, int r, int rt) {
 	if (L <= l && R >= r) {
 		Add[rt] += val;
@@ -45,7 +45,7 @@ void update(int L, int R, int val, int l, int r, int rt) {
 	pushup(rt);
 }
 
-//µãĞŞ¸Ä
+//ç‚¹ä¿®æ”¹
 void update(int index, int val, int l, int r, int rt) {
 	if (l == r) {
 		sum[rt] = val;
@@ -57,7 +57,7 @@ void update(int index, int val, int l, int r, int rt) {
 	pushup(rt);
 }
 
-//Çø¼ä²éÑ¯
+//åŒºé—´æŸ¥è¯¢
 int query(int L, int R, int l, int r, int rt) {
 	if (L <= l && R >= r) {
 		return sum[rt];
@@ -68,13 +68,4 @@ int query(int L, int R, int l, int r, int rt) {
 	if (L <= mid)ret += query(L, R, l, mid, rt << 1);
 	if (R > mid)ret += query(L, R, mid + 1, r, rt << 1 | 1);
 	return ret;
-}
-
-int main()
-{
-	build(1, n, 1);					//ÏÂ±ê´Ó1~n£¬½¨Ê÷
-	update(1, 4, 3, 1, n, 1);		//½«Çø¼ä1~4µÄµãÖµ¼Ó3
-	update(7, 5, 1, n, 1);			//½«ÏÂ±êÎª7µÄµãÖµ¸ÄÎª5
-	cout << query(1, 7, 1, n, 1);	//²éÑ¯Çø¼ä1~7µÄºÍ
-	return 0;
 }
