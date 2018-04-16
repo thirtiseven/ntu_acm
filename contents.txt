@@ -11,7 +11,43 @@
 [输入输出]
 sync_with_stdio.cc 	取消同步
 out_float.cc 	浮点数输出格式
+fastInInt.cc	整型快速输入
+fastInString.cc	字符串快速输入
+fastOutInt.cc	整型快速输出
+fastOutString.cc	字符串快速输出
+pythonInput.py	python 输入
+
+[动态规划]
+backpack.cc	背包问题
+LIS(nlogn).cc	最长单调子序列（nlogn)
+
+[数学]
+mul.cc	快速乘法取模
+powMod.cc	快速幂取模
+nC0tonCp.cc	计算从C(n, 0)到C(n, p)的值
+Stern-BrocotTree.cc	二分分数树（Stern-Brocot Tree)
+
+[图论]
+#dsu.cpp	并查集
+union-find.cc 	并查集
+union-find(undo).cc 	并查集（按秩合并）
+Kruskal.cc	Kruskal最小生成树
+SPFA.cc	SPFA 最短路
+dijkstra.cc	dijkstra 最短路
+Floyd.cc	Floyd 任意两点间最短路
+Dinic.cc	Dinic 最大流
+twoSAT.cc	2-SAT问题
 
 [数据结构]
+BIT.cc	树状数组
+2DBIT.cc	二维树状数组
+Heap.cc	堆
 RMQ.cpp 	RMQ
 segmentTree.cpp 	线段树
+ODT.cc	珂朵莉树（Old Driver Tree)
+
+[字符串]
+trie.cc	前缀树
+suffixArray.cc	后缀数组
+suffixAutomathine.cc	后缀自动机
+manacher.cc	最长回文子串
