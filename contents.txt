@@ -22,6 +22,17 @@ backpack.cc	背包问题
 LIS(nlogn).cc	最长单调子序列（nlogn)
 
 [数学]
+bfisprime.cc	暴力判素数
+Eratosthenes.cc	埃氏筛
+bfispalindrome.cc	暴力判回文数
+gcd.cc	最大公约数
+lcm.cc	最小公倍数
+exGcd.cc	扩展欧几里得
+crt.cc	中国剩余定理
+EulerPhi.cc	欧拉函数
+inv.cc	求逆元
+Cnmmodp.cc	C(n,m) mod p (n很大p可以很大）
+lucas.cc	Lucas定理
 mul.cc	快速乘法取模
 powMod.cc	快速幂取模
 nC0tonCp.cc	计算从C(n, 0)到C(n, p)的值
@@ -30,7 +41,7 @@ Stern-BrocotTree.cc	二分分数树（Stern-Brocot Tree)
 [图论]
 #dsu.cpp	并查集
 union-find.cc 	并查集
-union-find(undo).cc 	并查集（按秩合并）
+union-find(undo).cc 	可撤销并查集（按秩合并）
 Kruskal.cc	Kruskal最小生成树
 SPFA.cc	SPFA 最短路
 dijkstra.cc	dijkstra 最短路
@@ -44,10 +55,13 @@ BIT.cc	树状数组
 Heap.cc	堆
 RMQ.cpp 	RMQ
 segmentTree.cpp 	线段树
-ODT.cc	珂朵莉树（Old Driver Tree)
 
 [字符串]
 trie.cc	前缀树
 suffixArray.cc	后缀数组
 suffixAutomathine.cc	后缀自动机
 manacher.cc	最长回文子串
+
+[黑科技]
+bitOperation.cc	位运算
+ODT.cc	珂朵莉树（Old Driver Tree)
