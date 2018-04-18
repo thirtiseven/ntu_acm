@@ -24,6 +24,7 @@ LIS(nlogn).cc	最长单调子序列（nlogn)
 [数学]
 bfisprime.cc	暴力判素数
 Eratosthenes.cc	埃氏筛
+eulerSieve.cc	欧拉筛
 bfispalindrome.cc	暴力判回文数
 gcd.cc	最大公约数
 lcm.cc	最小公倍数
@@ -43,6 +44,7 @@ Stern-BrocotTree.cc	二分分数树（Stern-Brocot Tree)
 union-find.cc 	并查集
 union-find(undo).cc 	可撤销并查集（按秩合并）
 Kruskal.cc	Kruskal最小生成树
+MST_Prim.cc	Prim最小生成树
 SPFA.cc	SPFA 最短路
 dijkstra.cc	dijkstra 最短路
 Floyd.cc	Floyd 任意两点间最短路
@@ -53,14 +55,20 @@ twoSAT.cc	2-SAT问题
 BIT.cc	树状数组
 2DBIT.cc	二维树状数组
 Heap.cc	堆
-RMQ.cpp 	RMQ
-segmentTree.cpp 	线段树
+RMQ.cc	RMQ
+segmentTree.cc	线段树
 
 [字符串]
 trie.cc	前缀树
 suffixArray.cc	后缀数组
 suffixAutomathine.cc	后缀自动机
 manacher.cc	最长回文子串
+
+[类]
+point.cc	点类
+frac.cc	分数类
+Matrix.cc	矩阵
+Matrix01.cc	01矩阵
 
 [黑科技]
 bitOperation.cc	位运算

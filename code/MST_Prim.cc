@@ -1,9 +1,3 @@
-/*
-MST算法(Prim)：
-d[i][j]表示点i到点j的边的权值，lowc记录当前最短路，vis记录节点是否已被访问
-注：Prim算法更适用稠密图，用邻接矩阵表示
-*/
-
 int d[maxn][maxn];
 int lowc[maxn];
 int vis[maxn];
