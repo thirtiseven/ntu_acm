@@ -25,6 +25,7 @@ LIS(nlogn).cc	最长单调子序列（nlogn)
 bfisprime.cc	暴力判素数
 Eratosthenes.cc	埃氏筛
 eulerSieve.cc	欧拉筛
+factorization.cc	分解质因数
 bfispalindrome.cc	暴力判回文数
 gcd.cc	最大公约数
 lcm.cc	最小公倍数
@@ -57,6 +58,8 @@ BIT.cc	树状数组
 Heap.cc	堆
 RMQ.cc	RMQ
 segmentTree.cc	线段树
+ZKWsegmenttree.cc	ZKW线段树
+Mo.cc	莫队算法
 
 [字符串]
 trie.cc	前缀树

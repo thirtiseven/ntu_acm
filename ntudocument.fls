@@ -243,6 +243,9 @@ INPUT code/Eratosthenes.cc
 INPUT code/eulerSieve.cc
 INPUT code/eulerSieve.cc
 INPUT code/eulerSieve.cc
+INPUT code/factorization.cc
+INPUT code/factorization.cc
+INPUT code/factorization.cc
 INPUT code/bfispalindrome.cc
 INPUT code/bfispalindrome.cc
 INPUT code/bfispalindrome.cc
@@ -324,6 +327,12 @@ INPUT code/RMQ.cc
 INPUT code/segmentTree.cc
 INPUT code/segmentTree.cc
 INPUT code/segmentTree.cc
+INPUT code/ZKWsegmenttree.cc
+INPUT code/ZKWsegmenttree.cc
+INPUT code/ZKWsegmenttree.cc
+INPUT code/Mo.cc
+INPUT code/Mo.cc
+INPUT code/Mo.cc
 INPUT code/trie.cc
 INPUT code/trie.cc
 INPUT code/trie.cc
