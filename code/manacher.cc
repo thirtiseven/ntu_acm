@@ -1,40 +1,22 @@
-using namespace std;
-const int MAXN=110010;
-char Ma[MAXN*2];
-int Mp[MAXN*2];
-void Manacher(char s[],int len) {
-	int l=0;
-	Ma[l++] ='$';
-	Ma[l++] ='#';
-	for(int i=0;i<len;i++) {
-		Ma[l++] =s[i] ;
-		Ma[l++] ='#'; 
+const int maxn=2000005;
+int f[maxn];
+std::string a, s;
+int manacher() {
+	int n=0, res=0, maxr=0, pos=0;
+	for (int i=0; a[i]; i++) {
+		s[++n] = '#', s[++n] = a[i];
+		s[++n] = '#';
 	}
-	Ma[l]=0 ;
-	int mx=0,id=0; 
-	for(int i=0;i<l;i++) {
-		Mp[i]=mx>i?min(Mp[2*id-i],mx-i):1; 
-		while(Ma[i+Mp[i]] == Ma[i-Mp[i]]) Mp[i]++; 
-		if(i+Mp[i]>mx) {
-			mx=i+Mp [i];
-			id=i; 
+	for (int i=1; i<=n; i++) {
+		f[i] = (i<maxr? std::min(f[pos*2-i], maxr-i+1): 1);
+		while (i-f[i]>0 && i+f[i]<=n && s[i-f[i]]==s[i+f[i]]) {
+			f[i]++;
 		}
+		if (i+f[i]-1 > maxr) {
+			maxr=i+f[i]-1;
+			pos=i;
+		}
+		res = std::max(res,f[i]-1);
 	}
-}
-/*
-* abaaba
-* i:
-* Ma[i]:$#a#b#a#a$b # a # *Mp[i]:11214127214 1 2 1 
-*/
-char s[MAXN]; 
-int main() {
-	while(scanf( "%s", s)== 1) {
-		int len=strlen(s);
-		Manacher(s,len);
-		int ans=0;
-		for(int i=0;i<2*len+2;i++)
-			ans=max(ans, Mp[i] -1); 
-		printf( "%d\n ",ans );
-	}
-	return 0; 
+	return res;
 }

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.12)  9 MAY 2018 14:51
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.4.12)  9 MAY 2018 20:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1727,19 +1727,22 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (./code/BIT.cc) (./code/2DBIT.cc [23
 
 ]) (./code/Heap.cc) (./code/RMQ.cc [24])
-(./code/segmentTree.cc [25]) (./code/ZKWsegmenttree.cc) [26] (./code/Mo.cc
-[27]) [28]
+(./code/segmentTree.cc [25]) [26]
 第六章
-(./code/trie.cc) (./code/suffixArray.cc [29
+(./code/trie.cc) (./code/suffixArray.cc [27
 
 ]) (./code/suffixAutomathine.cc
-[30]) [31] (./code/manacher.cc) [32]
+[28]) [29] (./code/manacher.cc) [30]
 第七章
+(./code/Planegeometry.txt [31
+
+]) [32]
+第八章
 (./code/point.cc) (./code/frac.cc) [33
 
 ] (./code/Matrix.cc [34])
 (./code/Matrix01.cc [35]) [36]
-第八章
+第九章
 (./code/bitOperation.cc) (./code/ODT.cc [37
 
 ]))
@@ -1752,12 +1755,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 108.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 29348 strings out of 493005
- 553980 string characters out of 6134596
- 772678 words of memory out of 5000000
- 32879 multiletter control sequences out of 15000+600000
- 8990 words of font info for 71 fonts, out of 8000000 for 9000
+ 29528 strings out of 493005
+ 555235 string characters out of 6134596
+ 774681 words of memory out of 5000000
+ 33061 multiletter control sequences out of 15000+600000
+ 8998 words of font info for 72 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  57i,12n,68p,10493b,1969s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ntudocument.xdv (39 pages, 1441700 bytes).
+Output written on ntudocument.xdv (39 pages, 1419356 bytes).

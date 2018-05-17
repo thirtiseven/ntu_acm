@@ -327,12 +327,6 @@ INPUT code/RMQ.cc
 INPUT code/segmentTree.cc
 INPUT code/segmentTree.cc
 INPUT code/segmentTree.cc
-INPUT code/ZKWsegmenttree.cc
-INPUT code/ZKWsegmenttree.cc
-INPUT code/ZKWsegmenttree.cc
-INPUT code/Mo.cc
-INPUT code/Mo.cc
-INPUT code/Mo.cc
 INPUT code/trie.cc
 INPUT code/trie.cc
 INPUT code/trie.cc
@@ -345,6 +339,9 @@ INPUT code/suffixAutomathine.cc
 INPUT code/manacher.cc
 INPUT code/manacher.cc
 INPUT code/manacher.cc
+INPUT code/Planegeometry.txt
+INPUT code/Planegeometry.txt
+INPUT code/Planegeometry.txt
 INPUT code/point.cc
 INPUT code/point.cc
 INPUT code/point.cc
